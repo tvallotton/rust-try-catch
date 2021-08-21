@@ -81,7 +81,7 @@ impl Parse for Catch {
             error,
             err_type,
             block,
-        });
+        })
     }
 }
 use syn::ExprBlock;
