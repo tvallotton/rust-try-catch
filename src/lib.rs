@@ -25,11 +25,11 @@
 //!
 //! ```
 //! Note, if no wildcard is present then the compiler will warn about unused results.
-//! It can alo be used as an expression:
+//! It can also be used as an expression:
 //! ```rust
 //! // We can guarantee that all errors are catched 
 //! // so the type of this expression is `i32`.
-//! // It can be guarantieed because the final catch 
+//! // It can be guaranteed because the final catch 
 //! // does not specify an Error type. 
 //! let number: i32 = catch! {
 //!     try {
@@ -40,10 +40,11 @@
 //!     }
 //! };
 //! // we can't know for sure if all possible errors are 
-//! // handled so the type is still Result. 
+//! // handled so the type of this expression 
+//! // is still Result. 
 //! let result: Result<i32, _> = catch! {
 //!     try {
-//!         let number: i32 = "10".parse()?;
+//!         let number: i32 = "invalid number".parse()?;
 //!         number
 //!     } catch error: io::Error {
 //!         0
