@@ -1,3 +1,4 @@
+# try-catch
 This crate provides a macro that enables the familiar `try-catch` syntax of other programming languages.
 It can be used to easlily group errors and manage them dynamically by type rather than value.
 
