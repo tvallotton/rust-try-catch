@@ -1,8 +1,11 @@
 [package]
 name = "try-catch"
 version = "0.1.0"
+license = "APACHE 2.0"
 edition = "2018"
-
+repository = "https://github.com/tvallotton/rust-try-catch"
+license-file = "LICENSE"
+description = "A simple proc-macro that enables try-catch for Rust with automatic downcasting of error types."
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [lib]
 proc-macro = true

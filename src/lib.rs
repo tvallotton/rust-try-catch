@@ -77,7 +77,7 @@ impl Parse for Catch {
         if catch_kw != "catch" {
             return Err(Error::new(catch_kw.span(), "Expected `catch`."));
         }
-        return Ok(Catch {
+        Ok(Catch {
             error,
             err_type,
             block,
@@ -140,7 +140,7 @@ fn template(try_catch: TryCatch) -> TokenStream2 {
             #result
         }
     ]);
-    quote!({#template}).into()
+    quote!({#template})
 }
 
 fn is_async(input: TokenStream2) -> bool {
